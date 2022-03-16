@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contener h1 {
+            text-align: center;
+            border: 10px solid rebeccapurple;
+            background-color: rgb(255, 81, 0);
+            font-size: 40px;
+        }
+
+        .img {
+            color: red;
+            font-size: 6rem;
+            margin-bottom: 5rem;
+        }
+
+        .Card_img {
+            width: 1340px;
+            height: 750px;
+            object-fit: cover;
+        }
+
+        h2 {
+            text-align: center;
+            border: 10px solid rebeccapurple;
+            background-color: yellow;
+            margin-top: -100px;
+            font-size: 35px;
+        }
+
+        .tab1 {
+            margin: 20px;
+            width: 400px;
+        }
+
+        .tab1 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .tab1 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab1 button {
+            margin: 40px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 85px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab1 button:hover {
+            background: #45a1ff;
+        }
+
+        .tab2 {
+            margin: -580px 480px;
+            width: 400px;
+        }
+
+        .tab2 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .tab2 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab2 button {
+            margin: 40px 150px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 85px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab2 button:hover {
+            background: #45a1ff;
+        }
+
+        .tab3 {
+            margin: 20px 930px;
+            width: 400px;
+        }
+
+        .tab3 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: left;
+            text-align: center;
+        }
+
+        .tab3 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab3 button {
+            margin: 40px 150px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 85px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab3 button:hover {
+            background: #45a1ff;
+        }
+
+        .tab4 {
+            margin: 20px;
+            width: 400px;
+        }
+
+        .tab4 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .tab4 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab4 button {
+            margin: 30px 150px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 81px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab4 button:hover {
+            background: #45a1ff;
+        }
+
+        .tab5 {
+            margin: -580px 480px;
+            width: 400px;
+        }
+
+        .tab5 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .tab5 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab5 button {
+            margin: 40px 150px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 85px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab5 button:hover {
+            background: #45a1ff;
+        }
+
+        .tab6 {
+            margin: 20px 930px;
+            width: 400px;
+        }
+
+        .tab6 td,
+        th {
+            border-collapse: collapse;
+            margin: 60px;
+            border: 1px solid #999;
+            padding: 0.5rem;
+            text-align: left;
+            text-align: center;
+        }
+
+        .tab6 img {
+            width: 350px;
+            height: 200px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .tab6 button {
+            margin: 40px 150px;
+            background-color: rgb(255, 94, 0);
+            height: 30px;
+            width: 85px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .tab6 button:hover {
+            background: #45a1ff;
+        }
+
+        article {
+            height: 40px;
+            display: grid;
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 10px;
+        }
+
+        footer:hover {
+            background: rgb(255, 81, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contener">
+        <h1> STAR RESTORANT</h1>
+    </section>
+    <div class="img">
+        <img class="Card_img" src="R.jpg" alt="">
+    </div>
+    <div>
+        <h2>Information of All Food's </h2>
+    </div>
+    <table class="tab1">
+        <thead>
+            <tr>
+                <th>
+                    <h3>LADDU<h3> <img src="Laddu1.jpg" alt="">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>This traditional Indian dessert is made with different types of flour that are mixed with sugar and
+                    shortening, then shaped into balls. Like many other dishes in India, laddu appears in numerous
+                    varieties and is created with a myriad of different ingredients. Tiny laddu balls can be made with
+                    various types of legume flour, most commonly chickpea flour, wheat
+                    flour, and even coconut flakes. Dried fruits or nuts are often incorporated to provide sweetness and
+                    modify the flavor. This old Indian confectionery was primarily created with flour and jaggery. <a
+                        href="https://www.tasteatlas.com/laddu" target="Laddu"><button>Read
+                            More</button></a></td>
+        </tbody>
+    </table>
+    <table class="tab2">
+        <thead>
+            <tr>
+                <th>
+                    <h3>RASGULLA<h3> <img src="Rasgulla1.jpg" alt="">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>This traditional Indian dessert is made with different types of flour that are mixed with sugar and
+                    shortening, then shaped into balls. Like many other dishes in India, laddu appears in numerous
+                    varieties and is created with a myriad of different ingredients.
+
+                    Tiny laddu balls can be made with various types of legume flour, most commonly chickpea flour, wheat
+                    flour, and even coconut flakes. Dried fruits or nuts are often incorporated to provide sweetness and
+                    modify the flavor. This old Indian confectionery was primarily created with flour and jaggery.<a
+                        href="https://www.tasteatlas.com/rasgulla" target="Rasgulla"><button>Read More</button></a>
+                </td>
+        </tbody>
+        <table class="tab3">
+            <thead>
+                <tr>
+                    <th>
+                        <h3>MASALA DOSA<h3> <img src="Masala Dosa1.jpg" alt="">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A traditional southern Indian dish known as masala dosa is popular throughout the country, made
+                        from a batter of soaked rice and lentils that is baked into a thin pancake and usually stuffed
+                        with potatoes, onions, and mustard seeds. The dish is often garnished with grated coconut and
+                        chopped coriander.
+                        With its huge popularity, there are also some variations of the dish, such as mysore masala
+                        dosa, rava masala dosa, onion masala dosa, and paper masala dosa. It is usually consumed as a
+                        quick snack or as a part of any meal of the day. <a
+                            href="https://www.tasteatlas.com/masala-dosa" target="Masala Dosa"><button>Read
+                                More</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab4">
+            <thead>
+                <tr>
+                    <th>
+                        <h3>PALAK PANEER<h3> <img src="Palak Paneer1.jpg" alt="">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Palak paneer is a popular Indian vegetarian dish made with paneer cheese in a rich, thick sauce
+                        consisting of puréed spinach mixed with tomatoes, garam masala, garlic, and numerous spices. The
+                        key ingredients are even mentioned in the name of the dish, since palak means spinach in hindi,
+                        and paneer refers to the cheese.
+                        Palak paneer has roots in the Punjabi region, but there are also other variations of the dish
+                        throughout India. It is a highly nutritious meal that can be consumed either for breakfast,
+                        lunch, or dinner, accompanied by rice or Indian flatbreads such as naan and roti.<a
+                            href="https://www.tasteatlas.com/palak-paneer" target="Palak Paneer"><button>Read
+                                More</button></a> </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="tab5">
+            <thead>
+                <tr>
+                    <th>
+                        <h3>PAV BHAJI<h3> <img src="Pav Bhaji1.jpg" alt="">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pav bhaji is a popular street snack originating from the Indian state of Maharashtra. It
+                        consists of a vegetable curry that is typically served with a soft bread roll known as pav. The
+                        dish was invented in the 1850s as a midnight meal by street vendors who prepared it with all the
+                        leftover vegetables from the day, which were then mashed and combined with spices and ghee
+                        butter.
+                        Originally, it was a quick and easy meal for Mumbai's textile mill workers, but today it is a
+                        favorite street snack that is also served in some restaurants in Mumbai. There are a lot of
+                        varieties.<a href="https://www.tasteatlas.com/pav-bhaji" target="Pav Bhaji"><button>Read
+                                More</button></a> </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="tab6">
+            <thead>
+                <tr>
+                    <th>
+                        <h3>DAL MAKHANI<h3> <img src="Dal Makhani1.jpg" alt="">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Although it originated in Punjab, dal makhani has become one of the most popular Indian lentil
+                        dishes, both in the country and outside of its borders. It consists of red kidney beans and
+                        whole black lentils, which also go under the name urad.
+
+                        The dish is prepared with hefty amounts of ghee and various seasonings such as ginger garlic
+                        paste and chili, and it is slowly cooked in a rich, tomato-based sauce. The name makhani,
+                        meaning butter, stems from the last addition, a drizzle of melted ghee or butter that provides
+                        the typical velvety flavor of this classic. <a href="https://www.tasteatlas.com/dal-makhani"
+                            target="Dal Makhani"><button>Read More</button></a> </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <article>
+            <footer>
+                <p>© 2022 Ganesh Yevle</p>
+            </footer>
+        </article>
+
+
+
+</body>
+
+</html>
